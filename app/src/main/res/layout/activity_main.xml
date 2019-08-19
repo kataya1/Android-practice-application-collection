@@ -1,0 +1,104 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/personName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="time of arrival"
+            android:inputType="time"
+            android:onClick="mgetname"
+
+            />
+
+        <TextView
+
+            style="@style/HeaderTextStyle"
+            android:text="menu" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:onClick="wippedcream"
+            android:paddingLeft="16dp"
+            android:text="salamon"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:onClick="Choclate"
+            android:paddingLeft="16dp"
+            android:paddingStart="16dp"
+            android:text="shrimp"
+            android:textSize="16sp" />
+
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:text="@string/quantity"
+        />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:onClick="decrement"
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/quantity_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="#000000" />
+
+            <Button
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:onClick="increment"
+                android:text="+" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:text="@string/price"
+            />
+
+        <TextView
+            android:id="@+id/price_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0.00"
+            android:textColor="#000000" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:onClick="selfdistruct"
+            android:text="@string/self_destruct" />
+
+    </LinearLayout>
+</ScrollView>
